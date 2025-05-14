@@ -38,6 +38,7 @@ body {
   position: relative;
   z-index: 2;
   padding: 30px;
+  background-color: rgb(65, 17, 17);
 }
 
 #header ul {
@@ -53,7 +54,7 @@ body {
 
 #header a {
   text-decoration: none;
-  color: rgb(65, 33, 33);
+  color: rgb(255, 255, 255);
  margin: 20px;
  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -76,4 +77,17 @@ body {
 
 .texto-hero p {
   font-size: 1.5rem;
+}
+.moda h1{
+  text-align: center;
+  margin-top: 30px;
+}
+.moda p{
+  margin-top: 20px;
+  
+  text-align: center;
+}
+#estaçoes .tempo {
+ display: flex;
+text-align: center;
 }
