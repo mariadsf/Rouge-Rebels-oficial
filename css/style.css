@@ -1,93 +1,26 @@
-* {
+
+
+*{
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
-
-body {
-  background-color: #e9dcb1;
-  overflow-x: hidden;
-  font-family: Arial, sans-serif;
-}
-
-#hero {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-.fundo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.fundo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(60%);
-}
-
-/* Navegação */
-#header {
-  position: relative;
-  z-index: 2;
-  padding: 30px;
-  background-color: rgb(65, 17, 17);
-}
-
-#header ul {
+#header ul{
   display: flex;
-  justify-content: flex-end;
-  gap: 30px;
+  float: right;
 }
-
-#header li {
+#header li{
+  margin: 30px;
   list-style: none;
-  
 }
-
-#header a {
+#header a{
   text-decoration: none;
   color: rgb(255, 255, 255);
- margin: 20px;
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-
-.texto-hero {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-  color: white;
+#hero{
+  height: 35rem;
+  width: 90rem;
+  background-color: #400106;
 }
-
-.texto-hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.texto-hero p {
-  font-size: 1.5rem;
-}
-.moda h1{
-  text-align: center;
-  margin-top: 30px;
-}
-.moda p{
-  margin-top: 20px;
-  
-  text-align: center;
-}
-#estaçoes .tempo {
- display: flex;
-text-align: center;
+body{
+  background-color: #e9dcb1;
+  overflow-x: hidden;
 }
