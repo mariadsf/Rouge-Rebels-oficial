@@ -95,6 +95,7 @@ body {
   font-family:Cormorant Infantil;
   margin-top: 20px;
 }
+
 #moda h1{
   margin-top: 40px;
   font-size: 35px;
@@ -102,8 +103,9 @@ body {
 #moda .boho {
   display: flex;
   height: 35rem;
-  margin: 10px;
+  margin: 80px;
   gap: 20px; /* Isso adiciona espaçamento automático entre as imagens */
+
 }
 
 #moda .boho img {
@@ -111,6 +113,7 @@ body {
   object-fit: cover;
   border-radius: 8px; /* opcional: deixa as bordas suavizadas */
   filter: brightness(70%);
+ 
 }
 #sobre .about h2{
   font-size: 35px;
@@ -124,6 +127,15 @@ section {
   max-width: 1000px;
   margin: auto;
 }
+.container h2{
+text-align: center;
+font-size: 30px;
+}
+.col-lg-6 {
+ text-align: center;
+ margin-top: -90px;
+list-style: none;
+}
 
 .conteudo-sobre {
   display: flex;
@@ -132,9 +144,16 @@ section {
 }
 
 .conteudo-sobre img {
+  height: 300px;
   width: 300px;
   border-radius: 50px;
   filter: brightness(70%);
+}
+
+.conteudo-sobre p{
+  font-size: 20px;
+  margin: 30px;
+ 
 }
 
 .noticias {
