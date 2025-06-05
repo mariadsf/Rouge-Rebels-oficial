@@ -1,0 +1,656 @@
+/* titulo */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Edu+QLD+Beginner:wght@400..700&display=swap');
+
+/* textos */
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Edu+QLD+Beginner:wght@400..700&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9dcb1;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+#hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fundo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.fundo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+/* Navegação */
+#header {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  background-color: rgb(65, 17, 17);
+  height: 30px;
+}
+
+#header ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+#header li {
+  list-style: none;
+  
+}
+
+#header a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+ margin: 20px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.texto-hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.texto-hero h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+  font-family:Edu QLD Beginner;
+
+}
+.texto-hero span{
+  font-size: 70px;
+}
+
+.texto-hero p {
+  font-size: 1.5rem;
+  font-family:Cormorant Infantil;
+  margin-top: 20px;
+}
+
+#sobre .about h2{
+  font-size: 35px;
+  margin-top: 40px;
+}
+section {
+  padding: 50px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+.container h2 {
+  text-align: left;
+  font-size: 30px;
+  border-bottom: 3px solid #333;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.descricao {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.conteudo-sobre {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.conteudo-sobre img {
+  width: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.info {
+  flex: 1;
+}
+
+.info h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtexto {
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.informacoes {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.coluna p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.frase-final {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+#moda .estilos{
+   max-width: 1000px;
+  margin: auto;
+}
+#moda .estilos p{
+  margin-top: 20px;
+}
+ .estilos strong{
+  margin-top: 40px;
+}
+
+#moda h1{
+  margin-top: 40px;
+  font-size: 35px;
+   text-align: left;
+  border-bottom: 3px solid #333;
+  display: inline-block;
+  margin-bottom: 15px;
+  
+}
+/* boho inicio */
+#moda .boho {
+  display: flex;
+  height: 35rem;
+  margin: 80px;
+  gap: 20px; /* Isso adiciona espaçamento automático entre as imagens */
+
+}
+
+#moda .boho img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; 
+  filter: brightness(70%);
+ 
+}
+
+#moda .boho-estilo{
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#moda .boho-estilo i {
+  color: #8c5e58; /* tom terroso que combina com o estilo boho */
+  margin-right: 6px;
+}
+
+.boho-estilo .elementos-boho {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.boho-estilo .elementos-boho li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.boho-estilo .elementos-boho i {
+  color: #a16c5b;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* boho fim */
+
+
+
+/* streetwer inicio */
+
+#urbano .Streetwear-estilo{
+   max-width: 1000px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#urbano .Streetwear{
+  display: flex;
+  height: 35rem;
+  gap: 85px; /* Isso adiciona espaçamento automático entre as imagens */
+max-width: 1000px;
+  margin: auto;
+}
+
+#urbano h1{
+  margin-top: 40px;
+  font-size: 35px;
+   text-align: left;
+  border-bottom: 3px solid #333;
+  display: inline-block;
+  margin-bottom: 15px;
+  
+}
+
+#urbano .Streetwear img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; 
+  filter: brightness(70%);
+ 
+}
+.Streetwear-estilo h1 {
+  margin-top: 40px;
+  font-size: 35px;
+  text-align: left;
+  border-bottom: 3px solid #333;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.Streetwear-estilo .origem {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.Streetwear-estilo .origem i {
+  color: #3b5998;
+  margin-right: 8px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.Streetwear-estilo p {
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.Streetwear-estilo .elementos-streetwear {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.Streetwear-estilo .elementos-streetwear li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.Streetwear-estilo .elementos-streetwear i {
+  color: #3b5998;
+  margin-right: 10px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* fim streetwer */
+
+
+/* inicio classico */
+
+#classico .classico-estilo{
+   max-width: 1000px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#classico .classic{
+  display: flex;
+  height: 35rem;
+  gap: 85px; /* Isso adiciona espaçamento automático entre as imagens */
+max-width: 1000px;
+  margin: auto;
+}
+
+#classico .classic img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; 
+  filter: brightness(70%);
+ 
+}
+.classico-estilo h1 {
+  margin-top: 40px;
+  font-size: 35px;
+  text-align: left;
+  border-bottom: 3px solid #333;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.classico-estilo .origem {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.classico-estilo .origem i {
+  color: #555555; /* cinza sóbrio para clássico */
+  margin-right: 8px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.classico-estilo p {
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.classico-estilo .elementos-classico {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.classico-estilo .elementos-classico li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.classico-estilo .elementos-classico i {
+  color: #555555;
+  margin-right: 10px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+/* fim classico */
+#anos-2000 .Y2K-estilo{
+   max-width: 1000px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#anos-2000 .Y2K{
+  display: flex;
+  height: 35rem;
+  gap: 85px; /* Isso adiciona espaçamento automático entre as imagens */
+max-width: 1000px;
+  margin: auto;
+}
+
+#anos-2000 .Y2K img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; 
+  filter: brightness(70%);
+ 
+}
+.Y2K-estilo h1 {
+  margin-top: 40px;
+  font-size: 35px;
+  text-align: left;
+  border-bottom: 3px solid #333;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.Y2K-estilo .origem {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.Y2K-estilo .origem i {
+  color: #ff69b4; /* rosa vibrante */
+  margin-right: 8px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.Y2K-estilo p {
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.Y2K-estilo .elementos-y2k {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.Y2K-estilo .elementos-y2k li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.Y2K-estilo .elementos-y2k i {
+  color: #ff69b4;
+  margin-right: 10px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+#rock .grunge-estilo{
+   max-width: 1000px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#rock .grunge{
+  display: flex;
+  height: 35rem;
+  gap: 85px; /* Isso adiciona espaçamento automático entre as imagens */
+max-width: 1000px;
+  margin: auto;
+}
+
+#rock .grunge img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; 
+  filter: brightness(70%);
+ 
+}
+.grunge-estilo h1 {
+  margin-top: 40px;
+  font-size: 35px;
+  text-align: left;
+  border-bottom: 3px solid #333;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.grunge-estilo .origem {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.grunge-estilo .origem i {
+  color: #5a5a5a; /* cinza escuro para o estilo grunge */
+  margin-right: 8px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.grunge-estilo p {
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.grunge-estilo .elementos-grunge {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.grunge-estilo .elementos-grunge li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.grunge-estilo .elementos-grunge i {
+  color: #5a5a5a;
+  margin-right: 10px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+
+.noticias {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.noticia {
+  background: #f8f8f8;
+  padding: 20px;
+  border-left: 5px solid crimson;
+}
+
+.fotos-colecao {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.fotos-colecao img {
+  width: 30%;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.fotos-colecao img:hover {
+  transform: scale(1.05);
+}
+
+.galeria-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.galeria-grid img {
+  width: calc(33.333% - 20px);
+  max-width: 300px;
+  border-radius: 8px;
+}
+.footer-rougerebels {
+  background-color: #222;  /* fundo escuro */
+  color: #eee;            /* texto claro */
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-contato {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-contato > div {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.footer-rougerebels h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e63946; /* vermelho Rouge Rebels */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-rougerebels p {
+  font-size: 16px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-rougerebels p i {
+  font-size: 20px;
+  color: #e63946;
+}
+
+.icons-sociais {
+  display: flex;
+  gap: 20px;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.icons-sociais a {
+  color: #eee;
+  transition: color 0.3s ease;
+}
+
+.icons-sociais a:hover {
+  color: #e63946;
+  transform: scale(1.1);
+}
+
+.localizacao iframe {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(230,57,70,0.4);
+  width: 100%;
+  height: 180px;
+  border: none;
+}
