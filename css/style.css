@@ -19,6 +19,23 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* Aplica a todas as seções e essas áreas específicas */
+section,
+.conteudo-sobre,
+#moda, #urbano, #classico, #anos-2000, #rock,
+#moda .boho, #urbano .Streetwear, #classico .classic, #anos-2000 .Y2K, #rock .grunge {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+
+/* HERO SECTION */
 #hero {
   position: relative;
   height: 100vh;
@@ -42,6 +59,37 @@ body {
   filter: brightness(50%);
 }
 
+/* Texto por cima da imagem */
+.texto-hero {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 100px 50px;
+  max-width: 700px;
+}
+
+.texto-hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.texto-hero h1 span {
+  color: #ffffff;
+}
+
+.texto-hero p {
+  font-size: 26px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.texto-hero p span {
+  font-size: 22px; /* reduzido de 26px */
+  color: #ffffff;
+  border-bottom: 3px solid #c90808;
+  letter-spacing: 2px;
+  padding-bottom: 4px;
+}
 /* Navegação */
 #header {
   position: relative;
@@ -111,9 +159,10 @@ section {
 .container h2 {
   text-align: left;
   font-size: 30px;
-  border-bottom: 3px solid #333;
+  border-bottom: 3px solid #410404;
   display: inline-block;
   margin-bottom: 15px;
+  color: #6b0606;
 }
 
 .descricao {
@@ -196,9 +245,10 @@ section {
   display: flex;
   height: 35rem;
   margin: 80px;
-  gap: 20px; /* Isso adiciona espaçamento automático entre as imagens */
+  gap: 20px;
 
 }
+
 
 #moda .boho img {
   height: 100%;
@@ -215,7 +265,7 @@ section {
 }
 
 #moda .boho-estilo i {
-  color: #8c5e58; /* tom terroso que combina com o estilo boho */
+  color: #8c5e58; 
   margin-right: 6px;
 }
 
@@ -262,9 +312,10 @@ max-width: 1000px;
   margin-top: 40px;
   font-size: 35px;
    text-align: left;
-  border-bottom: 3px solid #333;
+  border-bottom: 3px solid #2e0202;
   display: inline-block;
   margin-bottom: 15px;
+  color: #6b0606;
   
 }
 
@@ -428,7 +479,7 @@ max-width: 1000px;
   margin-top: 40px;
   font-size: 35px;
   text-align: left;
-  border-bottom: 3px solid #333;
+  border-bottom: 3px solid #333333;
   display: inline-block;
   margin-bottom: 15px;
 }
@@ -554,6 +605,7 @@ max-width: 1000px;
   gap: 20px;
 }
 
+
 .noticia {
   background: #f8f8f8;
   padding: 20px;
@@ -562,19 +614,27 @@ max-width: 1000px;
 
 .fotos-colecao {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;     
+  justify-content: space-between; 
   margin-top: 20px;
+  gap: 10px;          
+  max-width: 960px;     
+  margin-left: auto;
+  margin-right: auto;    /* centraliza o container */
 }
 
 .fotos-colecao img {
-  width: 30%;
+  width: calc(33.333% - 10px); /* cerca de 1/3 menos o gap */
+  height: 200px;               /* altura fixa */
   border-radius: 5px;
+  object-fit: cover;
   transition: transform 0.3s;
 }
 
 .fotos-colecao img:hover {
   transform: scale(1.05);
 }
+
 
 .galeria-grid {
   display: flex;
@@ -590,9 +650,18 @@ max-width: 1000px;
 }
 .footer-rougerebels {
   background-color: #222;  /* fundo escuro */
-  color: #eee;            /* texto claro */
-  padding: 40px 20px;
+  color: #eee;             /* texto claro */
+  padding: 40px 20px 60px 20px; /* mais espaço embaixo */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  width: 100vw;            /* largura total da viewport */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  box-sizing: border-box;  /* garante que padding não aumente largura */
 }
 
 .container-contato {
